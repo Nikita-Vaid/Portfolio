@@ -20,6 +20,8 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/design-desk.jpeg";
+import "./Portfolio.css";
+
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,39 +33,40 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
+    title: "Confluence 2k24 website",
+    description: "This was the official website for the cultural fest of NIT Kurukshetra 2024.It got footfall of around 10k+ people.", 
+
     url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Real-time chat application",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Leveraged ReactJS, NodeJS, ExpressJS, and MongoDB to build a scalable, real-time chat application, enabling instantmessaging with seamless user experience across multiple devices.",
+    url: "https://chatx-frontend1.onrender.com/",
   },
   {
-    title: "My Resume Site",
+    title: "Gym Website using React",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      " Created a user-friendly gym website utilizing React, focusing on creating a seamless and engaging user experience.",
+    url: "https://gym-website-red-iota.vercel.app/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Bubble Shooter Game using JavaScript",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    "Designed a bubble-shooting game to showcase skills in JavaScript and CSS.",
+    url: "https://bubble-shooter-game-weld.vercel.app/bubble-shooter.html",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="portfolio" style={{paddingTop:"35px"}}>
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
+            className="image-slide"
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
